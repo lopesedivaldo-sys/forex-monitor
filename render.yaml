@@ -1,0 +1,6 @@
+services:
+  - type: worker
+    name: forex-hammer-monitor
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python forex_hammer_monitor.py
